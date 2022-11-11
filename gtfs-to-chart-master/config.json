@@ -1,0 +1,9 @@
+{
+  "agencies": [
+    {
+      "agency_key": "dotv-metro",
+      "url": "http://data.ptv.vic.gov.au/downloads/gtfs.zip"
+    }
+  ],
+  "sqlitePath": "/tmp/gtfs"
+}
