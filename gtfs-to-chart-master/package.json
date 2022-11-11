@@ -1,0 +1,80 @@
+{
+  "name": "gtfs-to-chart",
+  "version": "2.0.4",
+  "private": false,
+  "description": "Generate stringline charts of a transit routes from GTFS",
+  "keywords": [
+    "transit",
+    "gtfs",
+    "transportation",
+    "visualizations",
+    "stringline",
+    "d3"
+  ],
+  "bugs": {
+    "url": "https://github.com/blinktaginc/gtfs-to-chart/issues"
+  },
+  "repository": "git://github.com/blinktaginc/gtfs-to-chart",
+  "license": "MIT",
+  "author": "Brendan Nee <brendan@blinktag.com>",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "gtfs-to-chart": "bin/gtfs-to-chart.js"
+  },
+  "scripts": {
+    "start": "node ./app",
+    "test": "xo"
+  },
+  "xo": {
+    "esnext": true,
+    "rules": {
+      "camelcase": [
+        "error",
+        {
+          "properties": "never"
+        }
+      ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    },
+    "space": true
+  },
+  "dependencies": {
+    "better-copy": "^1.0.4",
+    "chalk": "^5.1.2",
+    "connect-slashes": "^1.4.0",
+    "express": "^4.18.2",
+    "gtfs": "^3.6.1",
+    "js-beautify": "^1.14.7",
+    "lodash-es": "^4.17.21",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "progress": "^2.0.3",
+    "pug": "^3.0.2",
+    "sanitize-filename": "^1.6.3",
+    "simplify-geojson": "^1.0.5",
+    "sqlstring": "^2.3.3",
+    "timer-machine": "^1.1.0",
+    "untildify": "^4.0.0",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "xo": "^0.52.4"
+  },
+  "engines": {
+    "node": ">= 14.x"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/keep-a-changelog": {
+        "filename": "CHANGELOG.md"
+      }
+    }
+  }
+}
