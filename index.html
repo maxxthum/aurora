@@ -1,1 +1,33 @@
-hello world. 
+<!doctype html>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<html>
+  <head>
+    <title>Aurora</title>
+  </head>
+  <body> 
+	    <div class="row">
+    <div class="col-1"></div>
+    <div class="col-6">
+      <h1 class="display-1"> <b>aurora.</b></h1>
+      <h3 class="display-3">live transport tracking</h3>
+    </div>
+    <div class="col-3"></div>
+  </div>
+	  <div class="row">
+		  <div class="col-1"></div>
+    <div id="map" class="col-10" style="width: 80vw; height: 100vh;"></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibWF4dGh1bSIsImEiOiJja2p0bjZuZHMyZDFsMnBxdXVvZTBzcjY0In0.S9YaXfMwOSqkIrdvCBogTA';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+			  </script>
+		  <div class="col-1"></div>
+	</div>
+</body>
+</html>
